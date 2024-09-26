@@ -1,5 +1,5 @@
 up:
-  docker compose up -d --build
+	docker compose up -d --build
 
 bash:
-  docker compose exec node bash
+	docker compose exec node bash
