@@ -1,0 +1,12 @@
+services:
+  node:
+    container_name: node
+    restart: always
+    build:
+      context: .
+      dockerfile: ./.docker/develop.dockerfile
+    tty: true
+    volumes:
+      - ./src:/usr/src/app
+    ports:
+      - 3000:3000
